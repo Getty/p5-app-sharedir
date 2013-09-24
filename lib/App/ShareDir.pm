@@ -8,13 +8,21 @@ use warnings;
 
 =head1 SYNOPSIS
 
-  distdir File-ShareDir
-  moduledir File::ShareDir
-  distfile File-ShareDir file/name.txt
-  modulefile File::ShareDir file/name.txt
-  classfile Foo::Bar file/name.txt
+On your shell:
+
+  ~$ distdir File-ShareDir
+
+  ~$ moduledir File::ShareDir
+
+  ~$ distfile File-ShareDir file/name.txt
+
+  ~$ modulefile File::ShareDir file/name.txt
+
+  ~$ classfile Foo::Bar file/name.txt
 
 =head1 DESCRIPTION
+
+Just mapping the functions of L<File::ShareDir> to command line tools.
 
 =head1 SUPPORT
 

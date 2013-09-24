@@ -8,4 +8,17 @@ use strict;
 use warnings;
 use File::ShareDir ':ALL';
 
+die "need class" unless $ARGV[0];
+
+my $module = $ARGV[0];
+
+eval {
+  (my $file = $module) =~ s|::|/|g;
+  require $file.'.pm';
+  $module->import();
+  1;
+} or do {
+  die $@;
+};
+
 print class_file(@ARGV)."\n";
