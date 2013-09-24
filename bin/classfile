@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+# PODNAME: classfile
+# ABSTRACT: Executing File::ShareDir class_file with the arguments
+
+$|=1;
+
+use strict;
+use warnings;
+use File::ShareDir ':ALL';
+
+print class_file(@ARGV)."\n";

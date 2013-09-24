@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+# PODNAME: modulefile
+# ABSTRACT: Executing File::ShareDir module_file with the arguments
+
+$|=1;
+
+use strict;
+use warnings;
+use File::ShareDir ':ALL';
+
+print module_file(@ARGV)."\n";
